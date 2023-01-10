@@ -3,3 +3,6 @@
 # виключень.
 
 print('--- Task 2 ---')
+
+# TypeError
+# ValueError
