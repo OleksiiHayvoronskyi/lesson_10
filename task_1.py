@@ -19,28 +19,23 @@ def get_month():
         try:
             mon = int(input('Enter a number to get the month [0 == break]: '))
             if mon == 1 or mon == 2 or mon == 3 or mon == 4 \
-                    or mon == 5 or mon ==6 or mon == 7 \
+                    or mon == 5 or mon == 6 or mon == 7 \
                     or mon == 8 or mon == 9 or mon == 10 or mon == 11\
                     or mon == 12:
-                print(month [mon])
+                print(month[mon], '\n')
                 return get_month()
             elif mon > 12:
                 raise
             elif mon == 0:
                 print('Good bay!')
                 break
-
+        # Блок опрацювання помилок.
         except ValueError as ex:
-            print('Could not convert data to an integer:'.upper(), ex)
+            print('Could not convert data to an integer:'.upper(), ex, '\n')
         except Exception:
-            print('Please enter a valid input'.upper(),"[from 1 to 12]"'')
+            print('Please enter a valid input'.upper(), "[from 1 to 12]"'\n')
 
         #finally:
 
 
 get_month()
-
-# KeyError
-# TypeError
-# ValueError
-
