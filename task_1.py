@@ -29,14 +29,11 @@ def get_month():
             elif mon == 0:
                 print('Good bay!')
                 break
-        # Блок опрацювання виключень..
+        # Блок перехоплення виключень.
         except ValueError as val:
             print('Could not convert data to an integer:'.upper(), val, '\n')
         except Exception:
             print('Please enter a valid input'.upper(), "[from 1 to 12]\n" )
-
-        # finally:
-        #     print('Finally block:'.upper(), 'Process finished!')
 
 
 get_month()

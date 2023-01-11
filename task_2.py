@@ -21,7 +21,7 @@ def get_list():
 
     print('The current list is:', list)
     # Для перевірки роботи виключенння AssertionError.
-    # assert len(list) < len(set(list)), 'This list is not unique'.upper()
+    #assert len(list) < len(set(list)), 'This list is not unique'.upper()
     try:
         if len(list) == len(set(list)):
             print('This list is unique')
@@ -36,12 +36,9 @@ def get_list():
             print('Set of the unique numbers:', unique_elem)
             # Для перевірки виключення NameError.
             print('Set of the unique numbers:', unique_ele)
-    # Блок опрацювання виключень.
+    # Блок перехоплення виключень.
     except NameError as err:
         print('\nSomething went wrong:'.upper(), err)
-
-    # finally:
-    #     print('Finally block:'.upper(), 'Process finished!')
 
 
 get_list()
