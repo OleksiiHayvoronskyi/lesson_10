@@ -21,7 +21,7 @@ def get_list():
 
     print('The current list is:', list)
     # Для перевірки роботи виключенння AssertionError.
-    #assert len(list) < len(set(list)), 'This list is not unique'.upper()
+    # assert len(list) < len(set(list)), 'This list is not unique'.upper()
     try:
         if len(list) == len(set(list)):
             print('This list is unique')
@@ -41,4 +41,5 @@ def get_list():
         print('\nSomething went wrong:'.upper(), err)
 
 
+# Запуск функції.
 get_list()

@@ -33,7 +33,8 @@ def get_month():
         except ValueError as val:
             print('Could not convert data to an integer:'.upper(), val, '\n')
         except Exception:
-            print('Please enter a valid input'.upper(), "[from 1 to 12]\n" )
+            print('Please enter a valid input'.upper(), "[from 1 to 12]\n")
 
 
+# Запуск функції.
 get_month()
